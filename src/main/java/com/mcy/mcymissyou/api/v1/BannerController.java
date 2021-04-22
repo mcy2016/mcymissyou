@@ -6,5 +6,16 @@
  */
 package com.mcy.mcymissyou.api.v1;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/v1/banner")
 public class BannerController {
+    @GetMapping("/get")
+    public String getBanner() throws Exception {
+        throw new Exception("呀呀呀");
+//        return "Hello,机坪有风";
+    }
 }
